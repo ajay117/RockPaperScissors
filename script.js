@@ -1,9 +1,12 @@
+//This function will return a random choice for computer.
 function computerPlay() {
     let choices = ['Rock', 'Paper', 'Scissor'];
     let randomChoice = choices[Math.floor(Math.random() * 3)];
     return randomChoice;
 }
 
+//This function will take 2 arguments first will be Player's choice
+//And second will be Computer's, and the function  will return the result of game.
 function playRound(playerSelection, computerSelection) {
   playerSelection = playerSelection.toLowerCase();
   computerSelection = computerSelection.toLowerCase();
@@ -36,6 +39,8 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
+//This function will take a number as an argument 
+// And repeat the game equal number of times and will return Player's win or lose.
 function game(times) {
   let playerWinTimes = 0;
   let computerWinTimes = 0;
