@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body,
+button {
+    font-size: 20px;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    padding: 10px 30px;
+}
+.live-info div {
+    border-bottom: 3px solid black;
+}
+/* .hide {
+    display: none;
+} */
+
+@media only screen and (max-width: 700px) {
+    body,
+    button {
+        font-size: 16px;
+    }
+    .container{
+        width: 100%;
+    }
+}

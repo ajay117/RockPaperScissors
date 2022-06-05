@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
 <body>
+    <main class="container">
+        <label for="times">Choose round: </label>
+        <select id="times" names="times"> 
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <p class="status">Click to Play</p>
+        <div class="flex">
+            <button>Rock</button>
+            <button>Paper</button>
+            <button>Scissor</button>
+        </div>
+        <div class="flex">
+            <p>Human</p>
+            <p>Result</p>
+            <p>Computer</p>
+        </div>
+        <div class="live-info">
+
+        </div>
+        <div class="info">
+            <p class="info-computer">Times Computer Win:</p>
+            <p class="info-player">Times Player Win:</p>
+            <p class="info-draw">Times Draw:</p>
+            <!-- <button class="play-again hide">Play Again</button> -->
+        </div>
+    </main>
     
     <script src="./index.js"></script>
 </body>
