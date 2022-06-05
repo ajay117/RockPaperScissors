@@ -60,10 +60,11 @@ buttons.forEach(button => {
             } else {
                 para.innerText = 'Final Result: ' + 'It\'s a Draw';
                 para.style.padding = '10px 20px';
+                para.style.backgroundColor = 'black';
+                para.style.color = 'white';
             }
 
             info.appendChild(para);
-
         }
     });
 
@@ -108,3 +109,4 @@ function playRound(playerSelection, computerSelection) {
         return 'Sorry! Something went wrong';
     } 
 }
+
