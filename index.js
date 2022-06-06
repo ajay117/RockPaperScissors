@@ -16,7 +16,8 @@ buttons.forEach(button => {
         let result = playRound(playerChoice, computerChoice);
         let computerInfo = document.querySelector('.info-computer');
         let playerInfo = document.querySelector('.info-player');
-        let timesDrawInfo = document.querySelector('.info-computer');
+        let timesDrawInfo = document.querySelector('.info-draw');
+        console.log(result);
         if(result.includes('You won')) {
             timesPlayerWon += 1;
             playerInfo.innerText = '';
